@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>French Conjugation Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <h1>French Conjugation Practice</h1>
+    <div class="menu">
+        <button id="start-btn">Start Game</button>
+        <button id="settings-btn">Settings</button>
+    </div>
+    <div class="settings">
+        <h3 id="settings">Difficulty</h3>
+        <select id="difficulty-select">
+            <option value="trivial">Trivial</option>
+            <option value="easy">Easy</option>
+            <option value="moderate">Moderate</option>
+            <option value="difficult">Difficult</option>
+            <option value="useless">Useless</option>
+        </select>
+        <h3 id="settings">Questions</h3>
+        <select id="questions-select">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <h3 id="gamemode">Verb Collection</h3>
+        <select id="type-select">
+            <option value="common">Common Verbs</option>
+            <option value="all">All Verbs</option>
+        </select>
+        <button id="advanced-settings-btn">Advanced Settings</button>
+    </div>
+    <div class="advanced-settings">
+        <div class="indicatif">
+            <h4>Indicatif</h4>
+            <label id="indicatif-présent">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Présent
+            </label>
+            <label id="indicatif-passé-composé">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Passé composé
+            </label>
+            <label id="indicatif-imparfait">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Imparfait
+            </label>
+            <label id="indicatif-plus-que-parfait">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Plus-que-parfait
+            </label>
+            <label id="indicatif-passé-simple">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Passé simple
+            </label>
+            <label id="indicatif-passé-antérieur">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Passé antérieur
+            </label>
+            <label id="indicatif-futur-simple">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Futur simple
+            </label>
+            <label id="indicatif-futur-antérieur">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Futur antérieur
+            </label>
+        </div>
+        <div class="subjonctif">
+            <h4>Subjonctif</h4>
+            <label id="subjonctif-présent">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Présent
+            </label>
+            <label id="subjonctif-passé">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Passé
+            </label>
+            <label id="subjonctif-imparfait">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Imparfait
+            </label>
+            <label id="subjonctif-plus-que-parfait">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Plus-que-parfait
+            </label>
+        </div>
+        <div class="impératif">
+            <h4>Impératif</h4>
+            <label id="impératif-présent">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Présent
+            </label>
+            <label id="impératif-passé">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Passé
+            </label>
+        </div>
+        <div class="conditionnel">
+            <h4>Conditionnel</h4>
+            <label id="conditionnel-présent">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Présent
+            </label>
+            <label id="conditionnel-passé">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Passé
+            </label>
+        </div>
+        <div class="gérondif">
+            <h4>Gérondif</h4>
+            <label id="gérondif-présent">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Présent
+            </label>
+            <label id="gérondif-passé">
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+                Passé
+            </label>
+        </div>
+    </div>
+    
+    <div class="quiz">
+        <h2 id="question">Loading...</h2>
+        <div id="answer-buttons">
+            <button class="btn">.</button>
+            <button class="btn">.</button>
+            <button class="btn">.</button>
+            <button class="btn">.</button>
+        </div>
+    </div>
+    <button id="next-btn">Next</button>
+    <button id="menu-btn">Menu</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
